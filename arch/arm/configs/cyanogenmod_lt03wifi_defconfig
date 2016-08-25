@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm 3.4.106 Kernel Configuration
+# Linux/arm 3.4.112 Kernel Configuration
 #
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
@@ -530,7 +530,7 @@ CONFIG_SEC_LOG=y
 CONFIG_SEC_LOG_NONCACHED=y
 # CONFIG_SEC_LOG_LAST_KMSG is not set
 CONFIG_SEC_AVC_LOG=y
-CONFIG_SEC_DEBUG_TSP_LOG=y
+# CONFIG_SEC_DEBUG_TSP_LOG is not set
 CONFIG_SEC_DEBUG_TIMA_LOG=y
 # CONFIG_SEC_DEBUG_SUBSYS is not set
 
