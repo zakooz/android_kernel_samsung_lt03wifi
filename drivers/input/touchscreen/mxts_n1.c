@@ -686,7 +686,7 @@ static void mxt_report_input_data(struct mxt_data *data)
 #endif
 #endif
 		}
-		else if (data->fingers[i].state == MXT_STATE_RELEASE)
+		else if (data->fingers[i].state == MXT_STATE_RELEASE) {
 #if !defined(CONFIG_SAMSUNG_PRODUCT_SHIP)
 			tsp_debug_info(true, &data->client->dev, "[R][%d]: T[%d][%d] X[%d],Y[%d],W[%d],Z[%d],COMP[%d],SUM[%d],P[%d],M[%d]\n",
 				i, data->fingers[i].type,
@@ -707,7 +707,7 @@ static void mxt_report_input_data(struct mxt_data *data)
 #endif /*TSP_USE_SHAPETOUCH*/
 			, data->fingers[i].mcount);
 #endif
-
+		}
 
 		if (data->fingers[i].state == MXT_STATE_RELEASE) {
 			data->fingers[i].state = MXT_STATE_INACTIVE;
